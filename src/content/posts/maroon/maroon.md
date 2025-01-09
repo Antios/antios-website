@@ -24,7 +24,7 @@ This was a well known real world incident that occurred a while back where this 
 <iframe width="100%" height="468" src="https://www.youtube.com/embed/pXZ-aVP_n64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-Since theres so much info on this guy already we’ll find out pretty fast that he normally goes by the alias timoxa5651 and that hes Russian.
+Since theres so much info on this guy already you find out pretty fast that he normally goes by the alias timoxa5651 and that hes Russian.
 My first step after this was to browse Unknown Cheats since its the biggest discussion forum site for game cheats.
 From this I found some of his posts and it looks like he also plays Rust a lot and makes cheats for it too.
 Thats pretty much where I stopped since I know from the given URL template that it wont fit since [Uknowncheats.me](http://Uknowncheats.me) ≠ XXXXXXX.XXX

@@ -22,11 +22,11 @@ Even with this corrupted image you can still make out certain details in the pic
 
 Since the description says hes a cyber criminal and on the FBI most wanted list I decided to check out this list of people for someone who looks similar: https://www.fbi.gov/wanted/cyber 
 
-Scrolling through some of the people on the page I eventually came across a picture that looked simialr to the corrupted image were given.
+Scrolling through some of the people on the page I eventually came across a picture that looked simialr to the corrupted image we're given
 
 ![Alexesy](./img/alexesy.png "Alexesy")
 
-Looking more through his FBI wanted profile we'll see a NCIC Number that matches our flag.
+Looking more through his FBI wanted profile I found a NCIC Number that matches the flag
 
 ![NCIC](./img/ncic.png "NCIC")
 
