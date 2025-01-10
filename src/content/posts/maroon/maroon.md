@@ -16,15 +16,15 @@ lang: ''
 ## Solution
 
 Theres a few key points to consider when doing our research for this challenge
-1. Username is Destroyer2009
+1. Username is **Destroyer2009**
 2. Disrupted a major gaming tournament
 3. Made a cheat for another competitive game and posted on an obscure forum
 
-This was a well known real world incident that occurred a while back where this hacker known as Destroyer2009 hacked a 5 million dollar Apex Legends tournament. Lots of OSINT has already been done trying to figure out who he is so it makes it really easy. Theres a youtube video by John Hammond that covers a lot of the main points.
+This was a well known real world incident that occurred a while back where this hacker known as **Destroyer2009** hacked a 5 million dollar Apex Legends tournament. Lots of OSINT has already been done trying to figure out who he is so it makes it really easy. Theres a youtube video by John Hammond that covers a lot of the main points.
 <iframe width="100%" height="468" src="https://www.youtube.com/embed/pXZ-aVP_n64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-Since theres so much info on this guy already you find out pretty fast that he normally goes by the alias timoxa5651 and that hes Russian.
+Since theres so much info on this guy already you find out pretty fast that he normally goes by the alias **timoxa5651** and that hes Russian.
 My first step after this was to browse Unknown Cheats since its the biggest discussion forum site for game cheats.
 From this I found some of his posts and it looks like he also plays Rust a lot and makes cheats for it too.
 Thats pretty much where I stopped since I know from the given URL template that it wont fit since [Uknowncheats.me](http://Uknowncheats.me) ≠ XXXXXXX.XXX
