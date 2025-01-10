@@ -3,8 +3,8 @@ title: Maroon [OSINT]
 published: 2025-12-27
 description: 'Medium OSINT challenge from 0xl4ugh CTF'
 image: './img/lol0xlfugh.png'
-tags: ["Medium", "OSINT"]
-category: 'CTF Writeups'
+tags: ["Medium"]
+category: 'OSINT'
 draft: false 
 lang: ''
 ---

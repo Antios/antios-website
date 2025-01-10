@@ -3,8 +3,8 @@ title: Mini X [OSINT]
 published: 2025-12-27
 description: 'Easy OSINT challenge from 0xl4ugh CTF'
 image: "./img/lol0xlfugh.png"
-tags: ["Easy", "OSINT"]
-category: 'CTF Writeups'
+tags: ["Easy"]
+category: 'OSINT'
 draft: false 
 lang: ''
 ---

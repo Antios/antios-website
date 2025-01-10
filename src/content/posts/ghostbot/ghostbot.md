@@ -3,8 +3,8 @@ title: GhostBot [OSINT]
 published: 2025-12-27
 description: 'Hard OSINT challenge from 0xl4ugh CTF'
 image: './img/lol0xlfugh.png'
-tags: ["Hard", "OSINT"]
-category: 'CTF Writeups'
+tags: ["Hard", "First Blood"]
+category: 'OSINT'
 draft: false 
 lang: ''
 ---
@@ -27,8 +27,6 @@ From our discord server I couldnt find any users named **Za8lola** or **7amoksha
 
 > [!NOTE]
 > Both these servers are for the same CTF
-
-
 ![mmox](./img/mmox.png "mmox")
 
 Since we have a clue that its been working since 2021 I can search for all his posts starting from the oldest
@@ -72,7 +70,6 @@ I tried to do some JWT bypasses and brute force to try and get the key but it do
 
 > [!IMPORTANT]
 > If you click on **7amoksha**’s profile you'll see that his careless actions have caused him to become a victim of the hacker.
-
 ![victim](./img/victim.png "victim")
 
 The URL Topgg is a Discord bot website but the actual link is invalid. However, with the new name **Apachei** I used it to get some more info.
