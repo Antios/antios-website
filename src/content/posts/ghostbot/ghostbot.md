@@ -1,6 +1,6 @@
 ---
 title: GhostBot [OSINT]
-published: 2025-12-27
+published: 2024-12-27
 description: 'Hard OSINT challenge from 0xl4ugh CTF'
 image: './img/lol0xlfugh.png'
 tags: ["Hard", "First Blood"]
