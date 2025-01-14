@@ -22,7 +22,7 @@ Fairly easy challenge
 I first did a reverse image search on Google which returned similar looking buildings however the suroundings for them didnt match the current image
 I then decided to try my luck with Baidu Images which returned a promissing looking building with the word "Medical" above the door
 
-![baidu](./img/baidu.png "baidu")
+![baidu](./img/baidu.PNG "baidu")
 
 This also gives a name and location for the establishment
 
@@ -30,11 +30,11 @@ This also gives a name and location for the establishment
 
 Just to be sure I verified the image given with a Google maps street view of the location
 
-![maps](./img/maps.png "maps")
+![maps](./img/maps.PNG "maps")
 
 From here its as easy as searching "jk plastic surgery clinic facial contouring" and seeing the list of doctors on their site
 
-![kim](./img/kim.png "kim")
+![kim](./img/kim.PNG "kim")
 
 ### FLAG: ``uoftctf{Sung-Sik Kim}``
 
