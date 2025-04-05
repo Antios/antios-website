@@ -68,11 +68,11 @@ Assuming this was correct I continued to search through Google maps for places i
 
 I decided to do some Google dorking with the info we had to try and narrow down our searches. Originally I used:
 
-<code>“356” “Road|Rd” “California|CA”<code>
+<code>“356” “Road|Rd” “California|CA”</code>
 
 But after seeing many promissing results from the site **redfin.com** I decided to include that into the query:
 
-<code>“356” “Road|Rd” “California|CA” site:redfin.com<code>
+<code>“356” “Road|Rd” “California|CA” site:redfin.com</code>
 
 After many Google pages later I found the page with the location.
 
