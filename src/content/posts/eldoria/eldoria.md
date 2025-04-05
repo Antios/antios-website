@@ -1,6 +1,6 @@
 ---
 title: Cyber Apocalypse CTF 2025 Tales from Eldoria [OSINT]
-published: 2024-03-26
+published: 2025-03-26
 description: 'OSINT challenge from HTB Cyber Apocalypse CTF 2025'
 image: './img/htbcyber2025.png'
 tags: ["Easy"]
