@@ -5,115 +5,86 @@ description: 'OSINT challenge from HTB Cyber Apocalypse CTF 2025'
 image: './img/htbcyber2025.png'
 tags: ["Easy"]
 category: 'OSINT'
-draft: true 
+draft: false 
 lang: ''
 ---
 
-## Challenge Description
+# CTF Description
+> A few easy OSINT challenges from the Hack The Box Cyber Apocalypse CTF 2025
 
-> I discovered a leaked Discord chat where two individuals discussed a powerful bot used to track cybercriminals. One plans to use the bot to target someone, while the other warns of the risks. I’ve decided to investigate the bot’s origin, its role in cybercrime, and who's controlling it. Flag Format: 0xL4ugh{}
+## Echoes in the Stone (Very Easy)
 
-![discordleak](./img/discordleak.png "discordleak")
+> In Eldoria’s twilight archives, Nyla examines an ancient Celtic cross, its carvings rich with forgotten history. As her enchanted crystals illuminate its patterns, she traces its significance across realms and centuries. Finally, the monument’s true name materializes in glowing script — another mystery unraveled by Eldoria’s finest information seeker, who knows that even stone holds secrets for those who listen.
+
+![cross](./img/cross.png "cross")
 
 ## Solution
 
-Theres a few key points to consider when doing our research for this challenge
-1. We get 2 names **Za8lola** and **7amoksha** from the chat
-2. We also see someone else named **MM0X** who was talking about the bot in a discord server
-3. Its been tracking criminals since 2021
+This was a super easy challenge. Do a basic image reverse lookup to find the name.
 
-Doing mass searches for these users returns nothing useful.
-From our discord server I couldnt find any users named **Za8lola** or **7amoksha** but I did see someone named **MM0X** who shares the other discord server with me 
+![crossfound](./img/crossfound.png "crossfound")
 
-> [!NOTE]
-> Both these servers are for the same CTF
-![mmox](./img/mmox.png "mmox")
 
-Since we have a clue that its been working since 2021 I can search for all his posts starting from the oldest
+### FLAG: ``HTB{Muiredach_High_Cross}``
 
-![2021](./img/2021.png "2021")
 
-I noticed that theres an unknown channel/server that hes referring to here however its unavailable
+## The Stone That Whispers (Very Easy)
 
-![noaccess](./img/noaccess.png "noaccess")
+> In Eldoria’s twilight archives, Nyla studies a mysterious monument, her enchanted crystals illuminating ancient maps. The legendary Stone of Destiny calls to her from scattered records across realms. As her magical threads weave connections, its true name emerges in glowing script — another mystery unraveled by Eldoria’s master information seeker, who knows that every artifact leaves traces for those who can read the signs.
 
-If you right click on that unknown server you can copy the link we’ll be able to get the server ID. https://discord.com/channels/1321167893559382100/1321167894163226737/1321189372854276098
+![stone](./img/stone.png "stone")
 
-From this I useed an online tool (https://discord-avatar.com/en/server) to search Discord server by ID and found this server 
+## Solution
 
-![serverid](./img/serverid.png "serverid")
+Another very easy challenge. Basically find the flag the same way as the previous one with reverse image search. Afterwards I checked the Wiki page and found the flag name.
 
-I joined the discord server and saw a few familiar names. You'll see **MM0X** and **7amoksha** from the screenshot
+![stonefound](./img/stonefound.png "stonefound")
 
-I also saw the bot that we’re after called **Made7a**
+### FLAG: ``HTB{Lia_Fail}``
 
-This bot has a few commands
 
-![commands](./img/commands.png "commands")
+## The Hillside Haven ("Easy"...)
 
-```
-!list will print out a list of users in the database
-!info will give us the info about that user
-!login will generate a jtw for us to use. This token is role: guest by default
-!login_with_token will just take a token parameter and login with it
-```
+> Nyla channels her magic into a grand crystal, summoning an aerial view of the Western Hills district. Her task: locate a noble family’s ancestral home, its entrance marked by a numerical rune holding vital diplomatic secrets. As she traces hidden pathways and examines estates, her enchanted sight sharpens, illuminating the unique magical signature of one doorway. The glowing numerical sigil confirms her discovery — another secret unveiled by Eldoria’s master information seeker, who knows that even among countless dwellings, no two magical marks are ever the same. Flag Format: HTB{Number_StreetnameRoad}
 
-I first got the list of users 
+![house](./img/house.png "house")
 
-![userlist](./img/userlist.png "userlist")
+## Solution
 
-I tried every user with !info and got a result for each except for **Elsfa7 Elmrta7** which needs admin user to use it. This is probably where the flag will be (it was).
+This challenge was tagged as Easy but most people were in agreement that this was one of the harder OSINT challenges. 
 
-![notauth](./img/notauth.png "notauth")
+![meme](./img/meme.png "meme")
 
-I tried to do some JWT bypasses and brute force to try and get the key but it dosent work so then I dug deeper.
+From this image we need to find the street address of the house. The image gives us a few clues.
 
-> [!IMPORTANT]
-> If you click on **7amoksha**’s profile you'll see that his careless actions have caused him to become a victim of the hacker.
-![victim](./img/victim.png "victim")
+1. We can see "356" as the house number on the door
+2. The blurred license plate can be used to find the state
 
-The URL Topgg is a Discord bot website but the actual link is invalid. However, with the new name **Apachei** I used it to get some more info.
-I did a Sherlock search and got a ton of links. The only useful one is the Github.
+After doing some searching for **Western Hills** on Google many of the results showed up with places in California. This was furthur confirmed by using a site called **geohints** that has images of different places license plates.
 
-![sherlock](./img/sherlock.png "sherlock")
+![plate](./img/plate.png "plate")
 
-This guy has one repo (base64 decodes to the bots name)
+Assuming this was correct I continued to search through Google maps for places in California that could match our image. This did not work so I had to come up with something new.
 
-![github](./img/github.png "github")
+I decided to do some Google dorking with the info we had to try and narrow down our searches. Originally I used:
 
-The current <code>Botdis.py</code> file contains a rick roll gif
+<code>“356” “Road|Rd” “California|CA”<code>
 
-![rr](./img/rr.png "rr")
+But after seeing many promissing results from the site **redfin.com** I decided to include that into the query:
 
-Theres 6 commits I looked through 
+<code>“356” “Road|Rd” “California|CA” site:redfin.com<code>
 
-![commits](./img/commits.png "commits")
+After many Google pages later I found the page with the location.
 
-The <code>.patch</code> file returns a name and an email that was not part of the challenge
-The second commit shows the entire backend code including a secret key
+![houselink](./img/houselink.png "houselink")
 
-![secret1](./img/secret1.png "secret1")
+Which has our exact house image
 
-I tried using the key to craft the JWT but it dosent work so he must have changed it
-Commit 4 also contains this comment. The ID just relates to **7amoksha**’s discord profile
+![housefound](./img/housefound.png "housefound")
 
-![id](./img/id.png "id")
+### FLAG: ``HTB{356_CoventryRoad}``
 
-Commit 5 removes the source code and he BMs us in the comments some more
 
-![bm](./img/bm.png "bm")
 
-> [!NOTE]
-> From here we kinda messed up and first blooded the challenge the wrong way. My teammate rcopstein noticed that the bot would capitalize the first character of each word you gave it
-He came up with an exploit for it which would give the key
-![exploit](./img/exploit.png "exploit")
 
-The correct way however is to find the hackers gist account which contains a single gist that has the secret key
 
-![gist](./img/gist.png "gist")
-
-I used the key to craft the admin JWT and get the info for **Elsfa7 Elmrta7**
-
-![jwt](./img/jwt.png "jwt")
-
-### FLAG: ``0xL4ugh{Y0u_So1v3d_m3_bu7_It5_N0t_th3_End}``
