@@ -5,7 +5,7 @@ description: 'Hard OSINT challenge from L3ak CTF'
 image: './img/l3ak.png'
 tags: ["Hard", "3 Solves"]
 category: 'OSINT'
-draft: true 
+draft: false
 lang: ''
 ---
 
