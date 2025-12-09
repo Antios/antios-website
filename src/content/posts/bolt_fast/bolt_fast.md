@@ -5,7 +5,7 @@ description: 'Crypto challenge from BackdoorCTF 2025'
 image: './img/bdlogo.png'
 tags: ["Easy"]
 category: 'Crypto'
-draft: false 
+draft: true 
 lang: ''
 ---
 
@@ -13,11 +13,6 @@ lang: ''
 
 > Everyone keeps telling me to worry about Wiener's attack, but they just don't understand optimization. Don't bother checking my key size; it's huge. You'll never catch me! Hahahaha!
 
-$E = mc^2$
-
-$$
-\phi(n) = (p-1)(q-1)
-$$
 
 <code>output.txt</code>
 
@@ -58,6 +53,25 @@ print(f"e = {e}")
 print(f"c = {c}")
 ```
 
+## Solution
+
+This was a fairly easy challenge overall, but it was a great learning experience for getting more familiar with crypto.
+
+This challenge uses an incorrect implementation of RSA and attempts to mimic CRT optimization using <code>dp_smart</code>
 
 
-### FLAG: ``HTB{356_CoventryRoad}``
+
+
+
+
+
+
+$E = mc^2$
+
+$$
+\phi(n) = (p-1)(q-1)
+$$
+
+
+
+### FLAG: ``flag{w31n3r_d1dn7_73ll_y0u_70_b3_6r33dy}``
