@@ -3,7 +3,7 @@ title: Government Spy [OSINT]
 published: 2025-07-12
 description: 'Hard OSINT challenge from L3ak CTF'
 image: './img/l3ak.png'
-tags: ["Hard", "3 Solves"]
+tags: ["Hard", "First Blood"]
 category: 'OSINT'
 draft: false
 lang: ''
