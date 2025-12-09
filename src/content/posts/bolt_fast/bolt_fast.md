@@ -13,9 +13,7 @@ lang: ''
 
 > Everyone keeps telling me to worry about Wiener's attack, but they just don't understand optimization. Don't bother checking my key size; it's huge. You'll never catch me! Hahahaha!
 
-Inline: $E = mc^2$
-
-Block:
+$E = mc^2$
 
 $$
 \phi(n) = (p-1)(q-1)
